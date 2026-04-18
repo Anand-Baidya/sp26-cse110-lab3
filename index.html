@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Metadata not rendered on webpage -->
+        <title>Anand Baidya's Meeting Minutes</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="CSE 110 Lab 2: Meeting minutes for 2026 Summer Vacation Itinerary Planning">
+        <meta name="author" content="Anand Baidya">
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    
+<body>
+        <header>
+            <h1>Meeting Minutes: Summer Vacation Planning</h1>
+            <nav>
+                <a href="#attendance">Attendance</a> |
+                <a href="#agenda">Meeting Agenda</a> |
+                <a href="#media">Media</a> |
+                <a href="#feedback">Feedback Form</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Summer Vacation Planning & Logistics</h2>
+                <h3>Wednesday, April 8</h3>
+            </section>
+
+            <section id = "attendance">
+                <h2>Attendees</h2>
+                <hr>
+                <table border = "1", cellpadding = "5">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Contact Info</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anand Baidya</td>
+                            <td>Facilitator</td>
+                            <td>abaidya@ucsd.edu</td>
+                            <td>Present</td>
+                        </tr>
+                        <tr>
+                            <td>Emily Davis</td>
+                            <td>Activity Planner</td>
+                            <td>e.davis@gmail.com</td>
+                            <td>Present</td>
+                        </tr>
+                        <tr>
+                            <td>Jordan Prescott</td>
+                            <td>Treasurer</td>
+                            <td>j.prescott@outlook.com</td>
+                            <td>Present</td>
+                        </tr>
+                        <tr>
+                            <td>Patricia Smith</td>
+                            <td>Logistics Coordinator</td>
+                            <td>p.smith@mac.com</td>
+                            <td>Present</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id = "agenda">
+                <h2>Meeting Agenda</h2>
+                <hr>
+                <div>
+                    <h3>Unfinished Business from Last Meeting:</h3>
+                    <ul>
+                        <li>Narrow down the trip to a few specific neighborhoods</li>
+                        <li>Decide between an Airbnb or the local resort</li>
+                        <li>Finalize the total budget for the trip</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>New Business</h4>
+                    <ol>
+                        <li>Confirm who is officially booking the flights and collecting the money</li>
+                        <li>Decide if everyone is flying out of the same airport or meeting at the destination</li>
+                        <li>Agree on an approximate weekly budget for food and drinks</li>
+                        <li>Book museum tickets, park passes, and guided tours before they sell out</li>
+                        <li>Look for specific restaurants with allergy-free options</li>
+                    </ol>
+                </div>
+
+                <h2>Comments/Concerns</h2>
+                <hr>
+                
+                <details>
+                    <summary>Click to view comments/concerns</summary>
+                    <p>Anand mentionned that one-way weekend flights may exceed $1000. <b>We should consider flying on Wednesday instead of Saturday or Sunday.</b></p>
+                </details>
+            </section>
+
+            <section id = "media">
+                <h2>Media</h2>
+                <hr>
+                
+                <p>Copyright-free audio:</p>
+                <audio controls>
+                    <source src="Tobu - Roots - NCS.mp3" type="audio/mpeg">
+                </audio>
+                
+                <p>Video from Nara Deer Park:</p>
+                <video width="360" height="640" controls>
+                    <source src="nara-deer-park.mp4.mov" type="video/mp4">
+                </video>
+            </section>
+
+            <section id = "feedback">
+                <h2>Meeting Feedback Form</h2>
+                
+                <form>
+                    <fieldset>
+                        <p>Please fill out your preferences so we can buy tickets as soon as possible.</p>
+                        
+                        <label>Your Name:</label>
+                        <input type="text" name="user_name"><br><br>
+
+                        <label for="travel_date">Preferred Departure (Select the date):</label>
+                        <input type="date" id="travel_date" name="travel_date"><br><br>
+
+                        <p>Availability (Select one or both):</p>
+                        <input type="checkbox" id="task1" name="checklist" value="flights">
+                        <label for="task1">I can help book flights</label><br>
+                        <input type="checkbox" id="task2" name="checklist" value="activities">
+                        <label for="task2">I can help book activities</label><br>
+
+                        <p>Accommodation Preference (Select one):</p>
+                        <input type="radio" id="hotel" name="lodging" value="hotel">
+                        <label for="hotel">Hotel</label><br>
+                        <input type="radio" id="airbnb" name="lodging" value="airbnb">
+                        <label for="airbnb">Airbnb</label><br><br>
+
+                        <label for="budget">Max Budget (Select & Option):</label>
+                        <select id="budget" name="budget">
+                            <option value="500">$500</option>
+                            <option value="1000">$1000</option>
+                            <option value="1500">$1500</option>
+                        </select><br><br>
+
+                        <label for="airline">Preferred Airline:</label>
+                        <input list="airlines" name="airline" id="airline">
+                        <datalist id="airlines">
+                            <option value="American"></option>
+                            <option value="Delta">
+                            <option value="JetBlue"></option>
+                            <option value="Southwest">
+                            <option value="United"></option>
+                            
+                        </datalist><br><br>
+
+                        <label for="comments">Additional Notes:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                        <button type="button">Submit Preferences</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Adjourned the meeting at 1:35 PM</p>
+        </footer>
+    </body>
+</html> 
